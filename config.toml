@@ -1,0 +1,19 @@
+baseURL = "https://github.com/firben-sass/Comp_web"
+title = "Amazon Musical Reviews"
+description = "This is a project description"
+relativeURLs = true
+theme = "theme" 
+[params]
+    authors = ["Signe Wulff-Andersen", "Danyu Shen"]
+    notebook = "/explainer-notebook.html"
+    github = "https://github.com/firben-sass/Comp_web"
+    [[params.nav]]
+        label = "Data"
+        link = "/data-description"
+    [[params.nav]]
+        label = "Network"
+        link = "/network-analysis"
+    [[params.nav]]
+        label = "Text"
+        link = "/text-analysis"
+
