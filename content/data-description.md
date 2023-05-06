@@ -47,7 +47,25 @@ The data used in this project was obtained from the [nijianmo github repository]
 
 The digital music subset of the dataset specifically includes over 64,000 reviews of digital music products from Amazon, along with metadata such as product category, price, brand, and product title. One of the interesting features of the dataset is that it spans a relatively long period of time, from 1996 to 2014 and the reviews cover various music genres, such as rock, pop, classical, jazz, and many others. The dataset also includes the types of media sold such as albums, individual songs, digital music players and CD discs.
 
-The reviews in the digital music subset are in the form of text, and they are written by Amazon customers who have purchased and used the digital music products. Each review includes a star rating (from 1 to 5), a summary of the customer's opinion of the product, and a more detailed review of the product's features and performance.
+<!--
+The reviews in the digital music subset are in the form of text, and they are written by Amazon customers who have purchased and used the digital music products. Each review includes a star rating (from 1 to 5), a summary of the customer's opinion of the product, and a more detailed review of the product's features and performance -->
+
+The dataset is found under section Files, "Small" subsets for experimentation, Digital Music (5-core). This data set is a subset where the 5-core is extracted, such that each of the remaining users and items have 5 reviews each. Furthermore, the set has been filtered by the format of the product being sold, presenting as 'style' in the dataset, and only reviews of the Vinyl-style was included in the dataset for this project. The relevant variables in the data set are the following:
+
+```
+'overall' - rating of the product from 1 to 5, where 1 is the 
+lowest score and 5 is the highest score.
+
+'reviewerID' - reviewer ID for the given Amazon customer who 
+has reviewed the product
+
+'asin' - product ID for the bought product
+
+'reviewerName' - reviewer Name for the given Amazon customer 
+who has reviewed the product??
+
+'ReviewText' - review text.
+```
 
 <!--
 The data has also been filtered as to not have a too large network with little assosiation between large parts. The data has been filtered by the format of the product being sold. 
@@ -77,7 +95,6 @@ The data has also been filtered as to not have a too large network with little a
 </ul>
 -->
 
-The data has been filtered by the format of the product being sold, as this creates a better focus for the later analysis, as this will allow for more detailed information.
 
 An example of the format and type of data used in this project is given as follows:
 

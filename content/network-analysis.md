@@ -26,10 +26,10 @@ The list of top 5 reviewers from the network the list would be composed of the f
 
 ``` 
 Top 5 reviewers by degree:
-Reviewer ID: ARHJOL4GRDB95, Reviewer Name: Amazon Customer, Degrees: 524 
-Reviewer ID: A2R2KWQNIG07O, Reviewer Name: falloutromance, Degrees: 471
-Reviewer ID: AMKSCB1X545PN, Reviewer Name: martin russell, Degrees: 465
-Reviewer ID: A1S06O7AYKIWV, Reviewer Name: 33rpm, Degrees: 441
+Reviewer ID: ARHJOL4GRDB95, Reviewer Name: Amazon Customer, Degrees: 523 
+Reviewer ID: A2R2KWQNIG07O, Reviewer Name: falloutromance, Degrees: 469
+Reviewer ID: AMKSCB1X545PN, Reviewer Name: martin russell, Degrees: 464
+Reviewer ID: A1S06O7AYKIWV, Reviewer Name: 33rpm, Degrees: 440
 Reviewer ID: A38H7D8U24ECFK, Reviewer Name: Robert Levoy, Degrees: 422
 
 ```
