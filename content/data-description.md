@@ -105,6 +105,6 @@ This can then be seen in this histogram where the large amount of reviews are sh
 
 <img src="/images/num_lenrew.png" width="500" />
 
-The overall rating refers to the rating the user has given to the product on a scale between 1 and 5, with 5 indicating that the user was very satisfied and 1 the opposite. The distribution below shows that most reviewers on average give high ratings for products, and that the only outlier is rank 1, where this is the third most common rating, telling that if people liked the product most will give it a higher rating, but if they did not like it they would just give it the lowest rating on the scale. The reason for the whole numbers being more frequent compared to point numbers is that most people only give out 1 review which then becomes their average rating. 
+The distribution of overall ratings for products is shown in the third histogram. It can be seen that most reviewers tend to give high ratings, with 5 being the most common rating. However, there is also a noticeable amount of low ratings. Interestingly, the only outlier is rank 1, which is the third most common rating. This could suggest that people who liked the product tend to give it a higher rating, while those who did not like it simply give it the lowest rating possible. It's also worth noting that whole numbers are more common compared to point numbers, as most people only give out one review, which then becomes their average rating.
 
 <img src="/images/dist_avrrank.png" width="500" />
