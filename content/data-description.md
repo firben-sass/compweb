@@ -112,16 +112,16 @@ An example of the format and type of data used in this project is given as follo
 
 More analysis can then be done on this data, as it can be shown how the number of reviews are distributed over the amount of products. It should be noted that all of the plots given in this project are log-scaled, as the data is not necessarily consistent enough to see without scaling. 
 
-<img src="/images/num_rewprod.png" width="500" />
+<img src="/images/dist_rev.png" width="500" />
 
 Looking at this histogram, it can be seen that the number of products with between 0 and 25 reviews are by far the most common, which means that there are a lot of products that simply are not seen, bought or reviewed, which would make sense given the amount of products in the dataset. On the other hand, fewer products recieve more than 100 reviews, as these products can then considered either popular or well known. Furthermore, it is also very few people who write more than a couple reviews, ranging between 1 and 3 being the most common amount per person.
 
-<img src="/images/num_rewpers.png" width="500" />
+<img src="/images/dist_revPer.png" width="500" />
 
 This can then be seen in this histogram where the large amount of reviews are shown to be given by very few people. Furthermore, it can also be seen each reviewer most often uses between 7 and 12 characters and that the number of reviewers that write more than that are in the minority. 
 
-<img src="/images/num_lenrew.png" width="500" />
+<img src="/images/dist_lenRev.png" width="500" />
 
 The distribution of overall ratings for products is shown in the third histogram. It can be seen that most reviewers tend to give high ratings, with 5 being the most common rating. However, there is also a noticeable amount of low ratings. Interestingly, the only outlier is rank 1, which is the third most common rating. This could suggest that people who liked the product tend to give it a higher rating, while those who did not like it simply give it the lowest rating possible. It's also worth noting that whole numbers are more common compared to point numbers, as most people only give out one review, which then becomes their average rating.
 
-<img src="/images/dist_avrrank.png" width="500" />
+<img src="/images/dist_avrPer.png" width="500" />

@@ -38,7 +38,7 @@ This would then mean that these are the people who have left the most reviews on
 
 Looking at the following distribution it is easy to see that the majority of people share between 1 and 25 reviews on products, while there are a few stragglers that either have commented on severely popular products or have given a lot of reviews to a lot of different products.
 
-<img src="/images/degdist.png" width="500" />
+<img src="/images/avr_degrCom.png" width="500" />
 
 
 
@@ -85,25 +85,25 @@ Community 214: 373 nodes
 These are the top 5 communities by the amount of nodes present in them. However, looking at the distribution of the community sizes compared to the number of communities this shows that these are the exeptions to the rule, as most communities have a size between 0 and 100 nodes
 
 
-<img src="/images/commSize.png" width="500" />
+<img src="/images/com_sizeNum.png" width="500" />
 
 This is further confirmed in the proportions of nodes in the community, as most of the communities are shown to have a number of nodes with a relatively small proportion in comparison to the total network size.
 
-<img src="/images/commprop.png" width="500" />
+<img src="/images/com_propNum.png" width="500" />
 
 Then calculating the average amount of links in the top 5 communities, shows how many links each node on average has in the community. 
 
 ```
-The average degree of community 18 is 9.015602836879433
-The average degree of community 942 is 196.405
-The average degree of community 65 is 11.87012987012987
-The average degree of community 86 is 26.327272727272728
-The average degree of community 214 is 19.994638069705093
+The average degree og community 17 is 15.484029484029485
+The average degree og community 410 is 195.8997493734336
+The average degree og community 42 is 26.36272040302267
+The average degree og community 39 is 25.705202312138727
+The average degree og community 6 is 28.775147928994084
 ```
 
-Comparing these averages to the rest of the communities in the network, however, it is possible to see that the average degree of a community, the top 5 communities included, is mostly below 25 links in a community. The main exeption being community 942.
+Comparing these averages to the rest of the communities in the network, however, it is possible to see that the average degree of a community, the top 5 communities included, is mostly below 25 links in a community. The main exeption being community 410.
 
-<img src="/images/commavde.png" width="500" />
+<img src="/images/avr_degrCom.png" width="500" />
 
 
 

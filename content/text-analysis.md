@@ -9,7 +9,7 @@ The following wordclouds are available from the analysis of the different commun
 <!-- Maybe lets remove the most common words from all of the communities (the words that the comminities have in common with each other). 
 
 
-[23, 421, 31, 39, 232, 310, 3, 6, 77, 67]
+[17, 410, 42, 39, 6, 231, 2, 31, 3, 30]
 
 -->
 
@@ -23,7 +23,7 @@ The word cloud seems to be referring to the jazz genre. It contains words relate
 
 <img src="/images/comm410.png" width="700" />
 
-Based on the word cloud, it's difficult to determine a specific genre of music that it might be referring to. The mention of a band called "twentyone pilots" and their albums "Vessel" and "Blurryface" suggest that the genre might be alternative or pop rock. The words "meaning" and "opinions" also suggest that the music may have a deeper or more introspective lyrical content. Overall, it seems to be referencing modern music that may have a strong online presence and fanbase.
+Based on the word cloud, it's difficult to determine a specific genre of music that it might be referring to. The mention of a band called "Twenty One Pilots" and their albums "Vessel" and "Blurryface" suggest that the genre might be alternative or pop rock. The words "meaning" and "opinions" also suggest that the music may have a deeper or more introspective lyrical content. Overall, it seems to be referencing modern music that may have a strong online presence and fanbase.
 
 
 # Community 42
@@ -80,5 +80,40 @@ Based on the words in the word cloud, it seems that it is referring to the music
 
 # Sentiment analysis
 
-Although sentiment analysis was done on all mentioned communities, there is very little difference between the scores of the analysis. Consistently, there is shown to be a small negative score, a high neutral score, and a relatively high positive score. 
+Going through the different genres of the communities found in the word cloud analysis, it seems that the while some genres are more present in the vinyl space than others, it also calls into question how the buyers of the prodcut feels about the chosen music genre. Is there expected to be a lot of negativity regarding a genre more uncommon than others or will the sentiment analysis reveal that even niche genres have a positive reception among vinyl collectors? It's also worth noting that the presence of certain artists in the word cloud may suggest that they have a significant following within the vinyl community, regardless of the genre. 
 
+The sentiment analysis done in the Explainer Notebook gives the results, where the compounding of the percentages should be 1.0:
+
+```
+Community 17 (genre: jazz): 
+{'neg': 0.097, 'neu': 0.716, 'pos': 0.187}
+
+Community 410 (genre: alternative rock): 
+{'neg': 0.047, 'neu': 0.608, 'pos': 0.345}
+
+Community 42 (genre: broad range): 
+{'neg': 0.048, 'neu': 0.718, 'pos': 0.234}
+
+Community 39 (genre: experimental pop/rock): 
+{'neg': 0.054, 'neu': 0.698, 'pos': 0.248}
+
+Community 6 (genre: indie pop/rock): 
+{'neg': 0.067, 'neu': 0.677, 'pos': 0.255}
+
+Community 231 (genre: alternative rock): 
+{'neg': 0.045, 'neu': 0.748, 'pos': 0.206}
+
+Community 2 (genre: heavy metal): 
+{'neg': 0.066, 'neu': 0.68, 'pos': 0.254}
+
+Community 31 (genre: funk/soul): 
+{'neg': 0.046, 'neu': 0.775, 'pos': 0.179}
+
+Community 3 (genre: progressive rock): 
+{'neg': 0.058, 'neu': 0.74, 'pos': 0.202}
+
+Community 30 (genre: mainstream pop): 
+{'neg': 0.031, 'neu': 0.826, 'pos': 0.143}
+```
+
+Where it can be seen that, even spanning the genres, there is very little negativity in the reviews and comments that buyers of the products leave. In fact there is a clear positive sentiment present in the majority of the communities analyzed, with most of the communities having a positive sentiment score above 0.2. This suggests that the buyers of the product generally have a positive perception of the music genres represented in the communities. It is worth noting that the sentiment analysis is based on the text data collected, and may not necessarily reflect the overall sentiment of the entire community. However, the results suggest that the product is generally well received among the buyers, and that they have a positive opinion towards the music genres represented, although it should be noted that the genre of "mainsteam pop" have a lower score of positivity compared to the rest.  
