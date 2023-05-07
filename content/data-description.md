@@ -17,7 +17,7 @@ The digital music subset of the dataset specifically includes over 64,000 review
 <!--
 The reviews in the digital music subset are in the form of text, and they are written by Amazon customers who have purchased and used the digital music products. Each review includes a star rating (from 1 to 5), a summary of the customer's opinion of the product, and a more detailed review of the product's features and performance -->
 
-The dataset is found under the section Files, "Small" subsets for experimentation, Digital Music (5-core). This data set is a subset where the 5-core is extracted, such that each of the remaining users and items has 5 reviews. Furthermore, the set has been filtered by the format of the product being sold, presenting as 'style' in the dataset, and only reviews of the Vinyl-style were included in the dataset for this project. The relevant variables in the data set are the following:
+The dataset is found under the section Files, "Small" subsets for experimentation, Digital Music (5-core). This data set is 37,8 MB and is a subset where the 5-core is extracted, such that each of the remaining users and items has 5 reviews. Furthermore, the set has been filtered by the format of the product being sold, presenting as 'style' in the dataset, and only reviews of the Vinyl-style were included in the dataset for this project. The relevant variables in the data set are the following:
 
 
 ```
@@ -78,7 +78,13 @@ An example of the format and type of data used in this project is given as follo
 
 ```
 
+The filtered subset of vinyl records contains 14,822 reviews for 1,848 products in total.
+
+<!-- 
 More analysis can then be done on this data, as it can be shown how the number of reviews is distributed over the number of products. It should be noted that all of the plots given in this project are log-scaled, as the data is not necessarily consistent enough to see without scaling. 
+-->
+
+In order to explore how the data is distributed, the following distributions are investigated. It should be noted that all of the following plots are log-scaled, as the distributions are heavy-tailed. 
 
 <img src="/images/dist_rev.png" width="500" />
 

@@ -5,7 +5,7 @@ next: text-analysis
 ---
 
 
-The network created by using the [Amazon Review Dataset](../data-description) the <i>Vinyl</i>-section of the dataset the network has a size of 16,033 nodes and 250,213 links between these nodes. Nodes in this network represent the individual reviewers and the links between them are the presence of a review of the same product. The amount of common reviews between two nodes is then the given weight of a link. The direction of the link between the nodes does not matter as the number of incoming edges would be the same as the outgoing, which then would make this into an undirected, weighted, network.
+The network created by using the [Amazon Review Dataset](../data-description) the <i>Vinyl</i>-section of the dataset the network has a size of 13,170 nodes and 246,899 links between these nodes. Nodes in this network represent the individual reviewers and the links between them are the presence of a review of the same product. The amount of common reviews between two nodes is then the given weight of a link. The direction of the link between the nodes does not matter as the number of incoming edges would be the same as the outgoing, which then would make this into an undirected, weighted, network.
 
 The network created using this dataset can then be visualized as such:
 
