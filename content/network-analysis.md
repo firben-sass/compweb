@@ -7,7 +7,7 @@ next: text-analysis
 
 The network created by using the [Amazon Review Dataset](../data-description) the <i>Vinyl</i>-section of the dataset the network has a size of 13,170 nodes and 246,899 links between these nodes. Nodes in this network represent the individual reviewers and the links between them are the presence of a review of the same product. The amount of common reviews between two nodes is then the given weight of a link. The direction of the link between the nodes does not matter as the number of incoming edges would be the same as the outgoing, which then would make this into an undirected, weighted, network.
 
-The network created using this dataset can then be visualized as such:
+The largest connected component of the network created using this dataset can then be visualized as such:
 
 <table><tr>
 <td> <img src="/images/all_com.png" width="500" /></td>
@@ -43,6 +43,35 @@ Looking at the following distribution it is easy to see that the majority of peo
 
 
 
+# Centrality analysis
+
+It is always interesting to look at how important specific people are and how other people influence each other in a network. 
+
+
+Taking from our Explainer Notebook, the top 3 nodes for each type of measurement are listed below
+Where the measurement types are the three most common measures used to identify important nodes in a network as degree centrality, betweenness centrality, and closeness centrality. Degree centrality measures a node's connections, betweenness centrality measures a node's influence over the flow of information, and closeness centrality measures a node's efficiency in spreading information.
+
+```
+Top 3 nodes by degree centrality:
+ARHJOL4GRDB95 0.03971448097805452
+A2R2KWQNIG07O 0.03561394183309287
+AMKSCB1X545PN 0.03523426228263346
+
+Top 3 nodes by betweenness centrality:
+A1GGOC9PVDXW7Z 0.04757637422861338
+ARHJOL4GRDB95 0.03590701410501194
+A38H7D8U24ECFK 0.03033025637226728
+
+Top 3 nodes by closeness centrality:
+ARHJOL4GRDB95 0.23198999123634903
+A38H7D8U24ECFK 0.22268825988125707
+A163GYGV123WKV 0.22199765847574685
+```
+
+It is observed that all the centrality measures are relatively low indicating that there is not one reviewer that is much more important for the network than the other reviewers. But the reviewers listed above are still the most important reviewers within the network. 
+
+
+
 
 # Assortativity analysis
 
@@ -51,7 +80,8 @@ The assortativity of a network refers to the degree to which nodes in the networ
 The metric used to measure the assortativity of a network is the assortativity coefficient, a coefficient that measures the degree to which nodes with similar degrees tend to be connected from a scale from [-1, 1]. If the coefficient is positive this would mean that nodes tend to be connected to other nodes with similar degrees. 
 If the coefficient is negative this would mean that the nodes with the same degrees are more likely to be connected to other nodes with degrees different from their own. If no correlation between the values of the chosen node's degree and the neighboring nodes' degree, the coefficient is 0.
 
-Calculating the assortativity coefficient gives the value <b> 0.7467</b>.  It can, therefore, be concluded that there is a strong positive correlation between the variables being analyzed.
+The assortativity coefficient for degrees is <b>0.75</b> showing that the network is assortative where the nodes with high degrees tend to be connected with other nodes with high degrees. It shows that reviewers who have reviewed the most popular products tend to be more connected. The assortativity found for the average rating (<b>0.0350</b>) and number of products reviewed (<b>0.0039</b>), are both very close to 0, indicating there is no significant relation between the connected nodes and their average rating or number of products reviewed.
+
 
 
 # Community analysis

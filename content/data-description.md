@@ -1,5 +1,5 @@
 ---
-title: Data description
+title: Vinyl Records Review Data
 prev: "/"
 next: network-analysis
 ---
@@ -12,7 +12,7 @@ Total # of products = 12192
 
 The data used in this project was obtained from the [nijianmo github repository](https://nijianmo.github.io/amazon/index.html) which contains a comprehensive collection of both reviews and metadata from the Amazon website.
 
-The digital music subset of the dataset specifically includes over 64,000 reviews of digital music products from Amazon, along with metadata such as product category, price, brand, and product title. One of the interesting features of the dataset is that it spans a relatively long period, from 1996 to 2014 and the reviews cover various music genres, such as rock, pop, classical, jazz, and many others. The dataset also includes the types of media sold such as albums, individual songs, digital music players, and CDs.
+The digital music subset of the dataset specifically includes over 64,000 reviews of digital music products from Amazon. One of the interesting features of the dataset is that it spans a relatively long period, from 1996 to 2014 and the reviews cover various music genres, such as rock, pop, classical, jazz, and many others. The dataset also includes the types of media sold such as albums, individual songs, digital music players, and CDs.
 
 <!--
 The reviews in the digital music subset are in the form of text, and they are written by Amazon customers who have purchased and used the digital music products. Each review includes a star rating (from 1 to 5), a summary of the customer's opinion of the product, and a more detailed review of the product's features and performance -->
@@ -30,7 +30,7 @@ has reviewed the product
 'asin' - product ID for the bought product
 
 'reviewerName' - reviewer Name for the given Amazon customer 
-who has reviewed the product??
+who has reviewed the product
 
 'ReviewText' - review text.
 ```
@@ -73,6 +73,7 @@ An example of the format and type of data used in this project is given as follo
  'reviewerID': 'A2XX18G33X0AQ5', 
  'asin': '9714721180', 
  'style': {'Format:': ' Vinyl'}, 
+ 'reviewerName': 'Chuck Easton',
  'reviewText': 'Heavy Metal perfection'
  }
 

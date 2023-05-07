@@ -1,14 +1,27 @@
 ---
-title: Home Page
+title: Amazon Review Data Project
 layout: single
 next: data-description
 ---
 
+# Agenda
+
+* Introduction to project
+* Vinyl Records Review Data
+* Network analysis
+* Word Cloud and Sentiment Analysis of Reviews
+* Discussion
+
+
+<br>
+
+
+
 # Introduction to project
 
 In the era of digital music, the rise of online music streaming platforms has brought significant changes to the music industry, including the way music is consumed, produced, and reviewed. As a result, large amounts of data are now available for analysis, offering valuable insights into the preferences, behaviors, and opinions of music listeners. This project aims to analyze the social network constructed using a subset of Vinyl records from the Amazon Review Data (2018) and to uncover the genre of music that the reviews are based on. Vinyl records, as a relatively old medium, provide an interesting lens to examine how people perceive this format in today's world. 
-Furthermore, the hypothesis that most vinyl collectors are interested in the rock genre, based on the common advertisements for the medium and its accessories, also makes it interesting to explore whether or not this is indeed the truth or if there are other genres that may have a higher pervasiveness in the medium of vinyl records. This can help producers and sellers target their marketing strategies better, appealing to the target audience and improving sales.
 
+Furthermore, the hypothesis that most vinyl collectors are interested in the rock genre, based on the common advertisements for the medium and its accessories, also makes it interesting to explore whether or not this is indeed the truth or if there are other genres that may have a higher pervasiveness in the medium of vinyl records. This can help producers and sellers target their marketing strategies better, appealing to the target audience and improving sales.
 
 <!--
 

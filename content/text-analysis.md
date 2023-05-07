@@ -1,10 +1,11 @@
 ---
-title: Text analysis
+title: Word Cloud and Sentiment Analysis of Reviews
 prev: network-analysis
-next: conclusion
+next: discussion
 ---
 
-The following wordclouds are available from the analysis of the different communities, where it can then be used to determine the genre of the music that the community is interested in, or the genre of the product that they have bought. It should be noted that the wordclouds are presented in order of the size of the community, where the largest communities are presented first. 
+As explained in the previous section it is believed that different communities represent different groups of reviewers listening to different kinds of music.
+In order to determine the genre of the music that the community is interested in, or the genre of the product that they have bought, word clouds have been generated from each community in the top 10 largest. It should be noted that the wordclouds are presented in order of the size of the community, where the largest communities are presented first. 
 
 
 <!-- Maybe lets remove the most common words from all of the communities (the words that the comminities have in common with each other). 

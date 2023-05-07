@@ -1,4 +1,4 @@
-baseURL = "https://github.com/firben-sass/Comp_web"
+baseURL = "https://github.com/firben-sass/compweb"
 title = "Music Genre Identification based on Amazon Vinyl Records Reviews"
 description = "This is a project description"
 relativeURLs = true
@@ -6,7 +6,7 @@ theme = "theme"
 [params]
     authors = ["Signe Wulff-Andersen", "Danyu Shen"]
     notebook = "/explainer-notebook.html"
-    github = "https://github.com/firben-sass/Comp_web"
+    github = "https://github.com/firben-sass/compweb"
     [[params.nav]]
         label = "Data"
         link = "/data-description"
@@ -17,6 +17,6 @@ theme = "theme"
         label = "Text"
         link = "/text-analysis"
     [[params.nav]]
-        label = "Conclusion"
-        link = "/conclusion"
+        label = "Discussion"
+        link = "/discussion"
 
