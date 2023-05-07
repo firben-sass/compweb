@@ -4,20 +4,19 @@ prev: data-description
 next: text-analysis
 ---
 
-<!--
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla tellus, tempus sed lobortis quis, venenatis ac ante. Maecenas accumsan augue ultricies metus hendrerit, in ultrices urna fringilla. Suspendisse lobortis egestas magna, sit amet fermentum ligula tincidunt vitae. Suspendisse cursus non dui a vulputate. Cras vestibulum vulputate enim eu placerat. Ut scelerisque semper justo sit amet auctor. Aliquam sit amet iaculis tortor.
 
-> Nulla in justo hendrerit, tincidunt mauris et, porta est. Donec in leo vitae est ultrices dapibus id nec tortor. Maecenas ut ipsum eu nisl cursus facilisis scelerisque eu ex. Aliquam euismod elementum libero, at vehicula ipsum.
+The network created by using the [Amazon Review Dataset](../data-description) the <i>Vinyl</i>-section of the dataset the network has a size of 16,033 nodes and 250,213 links between these nodes. Nodes in this network represent the individual reviewers and the links between them are the presence of a review of the same product. The amount of common reviews between two nodes is then the given weight of a link. The direction of the link between the nodes does not matter as the number of incoming edges would be the same as the outgoing, which then would make this into an undirected, weighted, network.
 
-Nam commodo lorem quis tortor euismod, ut ultrices orci aliquet. Sed eget dui nec sem ullamcorper convallis id nec ante. Aliquam ultricies a massa quis semper. Donec suscipit augue ut sagittis hendrerit. Aliquam erat volutpat. Proin aliquet maximus nibh, id aliquet justo maximus at. Sed accumsan ante id aliquam pellentesque. Aliquam nec hendrerit quam. Suspendisse maximus eros sollicitudin, accumsan turpis eu, blandit nulla. Nunc lorem elit, molestie at libero gravida, placerat consectetur ante. Sed tincidunt viverra tellus a vehicula.
+The network created using this dataset can then be visualized as such:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit lobortis turpis. Praesent porttitor, turpis eu posuere molestie, sem dolor scelerisque sapien, eu aliquet ante felis ac metus. Pellentesque semper ultricies urna. Aenean auctor, turpis ut convallis ultrices, eros tellus bibendum risus, eu varius velit ante et diam. In suscipit lorem orci, eu placerat nibh dignissim ut. Nullam consequat nisl dui, in ornare risus porttitor sed. Integer vitae nibh semper purus ultrices rutrum. Pellentesque non diam ornare, imperdiet elit a, tempus lacus. Suspendisse viverra euismod dapibus.
+<table><tr>
+<td> <img src="/images/all_com.png" width="500" /></td>
+<td><img src="/images/top5.png" width="500" /></td>
+</tr></table>
 
--->
+In the image of the network structure to the left, each community has been assigned a unique color. However, on the right image, it is only the 5 largest communities in the network that have been given a unique color, while the rest have been assigned white. <br>
+Even though some clusters in the network may appear separate, it can be observed that there are clusters with the same color, indicating that they belong to the same community. This suggests that although these smaller clusters may not be closely connected to larger clusters, the content or genre of the products they purchased is similar enough to link them to a particular community. An example of this situation could be that two different clusters represent two separate albums each, but the genre of both of these albums is the same. In other words, it is believed that the color coding provides insight into how the music genres purchased by individuals can lead to the formation of communities, even among buyers who may not appear directly connected in the network - that is buyers from two different clusters being in the same community.
 
-<!-- How are we creating the network, what are the nodes? What are the links?-->
-
-The network created by using the [Amazon Review Dataset](../data-description) the <i>Vinyl</i>-section of the dataset the network has a size of 16,033 nodes and 250,213 links between theses nodes. Nodes in this network represent the individual reviewers and the links between them are the present of a review of the same product. The amount of common reviews between two nodes is then the given weight of a link. As the direction of the link between the nodes does not matter the amount of incomming edges would be the same as outgoing, which then would make this into a undirected, weighted, network.
 
 # Degree analysis
 
@@ -40,58 +39,55 @@ Looking at the following distribution it is easy to see that the majority of peo
 
 <img src="/images/avr_degrCom.png" width="500" />
 
+<br>
 
 
 
 
-# Associativity analysis
+# Assortativity analysis
 
-The associativity of a network refers to the degree to which nodes in the network are connected to other nodes with similar attributes or characteristics. In other words, a network with high associativity is one in which nodes with similar properties tend to be connected to each other more frequently than to nodes with different properties. In this network this would mean that the nodes share the same amount of degrees.
+The assortativity of a network refers to the degree to which nodes in the network are connected to other nodes with similar attributes or characteristics. In other words, a network with high assortativity is one in which nodes with similar properties tend to be connected more frequently than nodes with different properties. In this network, this would mean that the nodes share the same amount of degrees.
 
-<img src="/images/avNeideg.png" width="500" />
+The metric used to measure the assortativity of a network is the assortativity coefficient, a coefficient that measures the degree to which nodes with similar degrees tend to be connected from a scale from [-1, 1]. If the coefficient is positive this would mean that nodes tend to be connected to other nodes with similar degrees. 
+If the coefficient is negative this would mean that the nodes with the same degrees are more likely to be connected to other nodes with degrees different from their own. If no correlation between the values of the chosen node's degree and the neighboring nodes' degree, the coefficient is 0.
 
-In the above scatter plot of the associativity of a network the metric used to  measure the associativity of a network is the associativity coefficient, a coefficient which measures the degree to which nodes with similar degrees tend to be connected to each other from a scale from [-1, 1]. If the coefficient is positive this would mean that nodes tend to be connected to other nodes with the similar degrees. 
-If the coefficient is negative this would mean that the nodes with the same degrees are more likely to be connected to other nodes with degrees different from their own. If no correlation between the values of the chosen node's degree and the neighboring nodes' degree, the coefficient is 0. 
-In the scatter plot the degree associativity of the network can be determined by comparing where the points fall on the diagonal. If above the diagonal the network is associative and the coefficient positive. If below the diagonal the network is not associative and the coefficient negative. A neutral network will have the points fall on the diagonal. 
-
-In this scatterplot the density of the points is shown to be above the diagonal and calculating the associativity coefficient gives the value <b> 0.7467</b>.
+Calculating the assortativity coefficient gives the value <b> 0.7467</b>.  It can, therefore, be concluded that there is a strong positive correlation between the variables being analyzed.
 
 
 # Community analysis
 
-As the goal of this project is to analyze the text of the different communities present in the dataset, the first step is to look at how the community structure is determined to be. In this case it would be necessary to calculate the weighted modularity of the community, as this will show how strong the community structure is. 
+As the goal of this project is to analyze the text of the different communities present in the dataset, the first step is to look at how the community structure is determined to be. In this case, it would be necessary to calculate the weighted modularity of the community, as this will show how strong the community structure is. 
 The calculation of the weighted modularity can be found in the notebook and the results can then be shared here:
 
 ``` 
-Weighted modularity: 0.9009023466218269
+Weighted modularity: 0.8982755470740831
 
 ```
 
-A weighted modularity of 0.9009 indicates that there is a strong community structure in the network, where nodes tend to be more strongly connected to other within their own community than to other nodes in other community structures. The higher the modularity, the more pronounced and well-defined is the community structure in the network.
+Weighted modularity of 0.90 indicates that there is a strong community structure in the network, where nodes tend to be more strongly connected to others within their own community than to other nodes in other community structures. The higher the modularity, the more pronounced and well-defined the community structure in the network.
 
 A full analysis of the community structure can be found in the explainer notebook, but the results can then be shared here:
 
 ``` 
-There are 1863 communities.
+There are 837 communities.
 Top 5 communities by nodes
-Community 18: 705 nodes
-Community 942: 400 nodes
-Community 65: 385 nodes
-Community 86: 385 nodes
-Community 214: 373 nodes
+Community 414: 399 nodes
+Community 170: 373 nodes
+Community 6: 349 nodes
+Community 39: 346 nodes
+Community 33: 312 nodes
 
 ```
 
-These are the top 5 communities by the amount of nodes present in them. However, looking at the distribution of the community sizes compared to the number of communities this shows that these are the exeptions to the rule, as most communities have a size between 0 and 100 nodes
-
+These are the top 5 communities by the number of nodes present in them. However, looking at the distribution of the community sizes compared to the number of communities shows that these are the exceptions to the rule, as most communities have a size between 0 and 50 nodes.
 
 <img src="/images/com_sizeNum.png" width="500" />
 
-This is further confirmed in the proportions of nodes in the community, as most of the communities are shown to have a number of nodes with a relatively small proportion in comparison to the total network size.
+This is further confirmed in the proportions of nodes in the community, as most of the communities are shown to have several nodes with a relatively small proportion in comparison to the total network size.
 
 <img src="/images/com_propNum.png" width="500" />
 
-Then calculating the average amount of links in the top 5 communities, shows how many links each node on average has in the community. 
+Then calculate the average amount of links in the top 5 communities, and shows how many links each node on average has in the community. 
 
 ```
 The average degree og community 17 is 15.484029484029485
@@ -101,9 +97,11 @@ The average degree og community 39 is 25.705202312138727
 The average degree og community 6 is 28.775147928994084
 ```
 
-Comparing these averages to the rest of the communities in the network, however, it is possible to see that the average degree of a community, the top 5 communities included, is mostly below 25 links in a community. The main exeption being community 410.
+Comparing these averages to the rest of the communities in the network, however, it is possible to see that the average degree of a community, the top 5 communities included, is mostly below 50 links in a community. The main exception is community 410.
 
 <img src="/images/avr_degrCom.png" width="500" />
+
+In the end all of this suggests that the reviews from communities can be a good representative for the text analysis as the communities have been shown to be well connected and a good mix of both casual and frequent reviewers.
 
 
 

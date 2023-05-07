@@ -1,6 +1,7 @@
 ---
 title: Text analysis
 prev: network-analysis
+next: conclusion
 ---
 
 The following wordclouds are available from the analysis of the different communities, where it can then be used to determine the genre of the music that the community is interested in, or the genre of the product that they have bought. It should be noted that the wordclouds are presented in order of the size of the community, where the largest communities are presented first. 
